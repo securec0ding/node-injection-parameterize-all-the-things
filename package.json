@@ -1,0 +1,13 @@
+{
+    "name": "node-sqli-vulnerable",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "morgan": "^1.9.1",
+      "morgan-body": "2.4.5",
+      "pug": "^2.0.4",
+      "sqlite3": "^4.1.1"
+    }
+  }

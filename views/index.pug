@@ -1,0 +1,27 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://hunter2labs.s3.amazonaws.com/common.css')
+    script(src='https://hunter2labs.s3.amazonaws.com/common.js')
+  body
+    form(action='/', method='post', encType='application/x-www-form-urlencoded')
+      input#search(name='search')
+      button(type='submit') Search employees
+    if employees.length
+      h3 Employees:
+      table
+        thead
+          tr
+            th Name
+            th Email
+            th Phone
+            th Date of Birth
+            th Salary
+        tbody
+          each emp in employees
+            tr
+              td= emp.name
+              td= emp.email
+              td= emp.phone
+              td [redacted]
+              td [redacted]
